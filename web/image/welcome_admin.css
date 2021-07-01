@@ -1,0 +1,258 @@
+/*圆角预设*/
+body {
+    --radius-h: 320px;
+    --radius-default: 16px;
+    --radius-s: 12px;
+    --radius-m: 8px;
+
+}
+/*颜色预设*/
+body {
+    --color-bg-default: #EBECF0;
+    --color-typo-primary: #340900;
+    --color-typo-link: #cc163a;
+    --color-control-bg-default: rgba(240, 242, 247, 1);
+    --color-white:#FFF;
+    --color-black:#BABECC;
+    --color-shadow: 12, 13, 18;
+    --color-light: 255, 255, 255;
+    --color-glow: 0, 150, 255;
+    --color-font: #35333c;
+}
+/*大小预设*/
+body {
+    --space-3xs: 2px;
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-s: 12px;
+    --space-m: 16px;
+    --space-l: 20px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 40px;
+    --space-4xl: 48px;
+    --space-5xl: 72px;
+    --space-6xl: 96px;
+}
+
+.update-item{
+    margin-top: var(--space-l);
+}
+.update-item .update-button {
+    border: 0;
+    outline: 0;
+    font-size: var(--space-m);
+    border-radius: var(--radius-h);
+    padding: var(--space-m);
+    background-color:var(--color-bg-default);
+    text-shadow: 1px 1px 0 var(--color-white);
+    color: var(--color-font2);
+    width: 25%;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-black);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.update-item .update-button:hover{
+    color:var(--color-typo-link);
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-black);
+}
+.update-item .update-button:active{
+    color:var(--color-typo-link);
+    box-shadow: inset 1px 1px 2px var(--color-black), inset -1px -1px 2px var(--color-white);
+}
+
+/*我的消息*/
+.news-item{
+    line-height: 50px;
+}
+.news-form{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.news-form .news-title{
+    height:var(--space-2xl);
+    width: 80%;
+    text-align: left;
+}
+.news-form .news-title>a{
+    font-size: var(--space-l);
+    text-decoration:none;
+}
+/*学生管理*/
+.select-item{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.select-item>p{
+    display: inline-table;
+}
+.select-item .select{
+    /*清除默认样式*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    outline: none;
+    border: none;
+    /*设置新样式*/
+    width: 170px;
+    margin-right: 20px;
+    line-height: var(--space-3xl);
+    padding-left: var(--space-l);
+    box-sizing: border-box;
+    border-radius: var(--radius-m);
+    background-color: var(--color-bg-default);
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/icon_select_s.svg');
+    background-position: calc(100% - var(--space-m)) center;
+    background-repeat: no-repeat;
+    box-shadow: inset 1px 1px 1px rgba( var(--color-light), 0.6),
+    inset -1px -1px 1px rgba( var(--color-shadow), 0.06),
+    -1px -1px 4px 0px rgba( var(--color-light), 0.6),
+    -2px -2px 8px 0px rgba( var(--color-light), 0.6),
+    1px 1px 4px 0px rgba( var(--color-shadow), 0.06),
+    2px 2px 8px 0px rgba( var(--color-shadow), 0.06);
+}
+.select-item .search{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    margin-left: 40px;
+    height: var(--space-3xl);
+    background-color: var(--color-bg-default);
+    border-radius: var(--radius-m);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: -4px -4px 10px var(--color-white), 4px 4px 10px var(--color-black);
+}
+.select-item .search:hover{
+    box-shadow: -2px -2px 4px var(--color-white), 2px 2px 4px var(--color-black);
+}
+.select-item .search:active{
+    box-shadow: inset 1px 1px 2px var(--color-black), inset -1px -1px 2px var(--color-white);
+}
+.student-information{
+
+}
+.student-information .form-title{
+    line-height: 50px;
+    font-size: var(--space-l);
+    font-weight: bold;
+}
+.student-information-form{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+.student-information-form .fieldname{
+    height:var(--space-2xl);
+    font-weight: bold;
+    width: 12%;
+}
+.student-information-form .content{
+    height:var(--space-2xl);
+    width: 12%;
+}
+.link>a{
+    font-size: var(--space-s);
+}
+/*成员添加*/
+.add-item{
+    height: 500px;
+}
+.add-item .form-title{
+    line-height: 60px;
+    font-size: var(--space-l);
+    font-weight: bold;
+}
+.add-form{
+    padding-top:var(--space-xl);
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.add-form .fieldname{
+    width: 15%;
+    text-align: right;
+    height:var(--space-4xl);
+}
+.add-form .fieldname>p{
+    display: inline-table;
+    font-weight: bold;
+}
+.add-form .input{
+    width: 35%;
+    text-align: left;
+    height:var(--space-4xl);
+}
+.add-form .input>input{
+    border: 0;
+    outline: 0;
+    padding: var(--space-2xs) var(--space-l) var(--space-2xs) var(--space-l);
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: var(--space-l);
+    border-radius: var(--radius-m);
+    background-color:var(--color-control-bg-default);
+    text-shadow: 1px 1px 0 var(--color-white);
+    box-shadow:  inset 2px 2px 5px var(--color-black), inset -5px -5px 10px var(--color-white);
+    width: 80%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.add-form .input>input:focus{
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+.add-form .submit{
+    text-align: center;
+    height:var(--space-5xl);
+}
+.add-form .submit-line{
+    text-align: center;
+    height:var(--space-xl);
+}
+.add-form .submit>input{
+    border: 0;
+    outline: 0;
+    width: 200px;
+    height: var(--space-3xl);
+    padding: var(--space-xs) var(--space-l) var(--space-xs) var(--space-l);
+    font-size: var(--space-l);
+    border-radius: var(--radius-h);
+    background-color:var(--color-bg-default);
+    text-shadow: 1px 1px 0 var(--color-white);
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-black);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.add-form .submit>input:hover{
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-black);
+    color: var(--color-typo-link);
+}
+.add-form .submit>input:active{
+    box-shadow: inset 1px 1px 2px var(--color-black), inset -1px -1px 2px var(--color-white);
+    color: var(--color-typo-link);
+}
+
+/*分割线*/
+.flow{
+    overflow-y:scroll;
+    margin: var(--space-l) var(--space-xl);
+    height:300px;
+}
+.line{
+    margin: auto;
+    height:var(--space-xs);
+    width:760px;
+    background-color: var(--color-bg-default);
+    border-radius: var(--radius-h);
+    box-shadow:
+            -1px -1px 4px 0px rgba( var(--color-light), 0.06),
+            -2px -2px 8px 0px rgba( var(--color-light), 0.06),
+            1px 1px 4px 0px rgba( var(--color-shadow), 0.08),
+            2px 2px 8px 0px rgba( var(--color-shadow), 0.08);
+}
