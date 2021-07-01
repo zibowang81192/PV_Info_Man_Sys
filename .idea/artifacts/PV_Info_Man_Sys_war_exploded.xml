@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PV_Info_Man_Sys:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PV_Info_Man_Sys_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="PV_Info_Man_Sys/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PV_Info_Man_Sys" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

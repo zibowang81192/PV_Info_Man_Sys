@@ -1,0 +1,166 @@
+/*圆角预设*/
+body {
+    --radius-h: 320px;
+    --radius-default: 16px;
+    --radius-s: 12px;
+    --radius-m: 8px;
+
+}
+/*颜色预设*/
+body {
+    --color-bg-default: #EBECF0;
+    --color-typo-primary: #340900;
+    --color-typo-link: #cc163a;
+    --color-control-bg-default: rgba(240, 242, 247, 1);
+    --color-white:#FFF;
+    --color-black:#BABECC;
+    --color-shadow: 12, 13, 18;
+    --color-light: 255, 255, 255;
+    --color-glow: 0, 150, 255;
+    --color-font: #35333c;
+}
+/*大小预设*/
+body {
+    --space-3xs: 2px;
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-s: 12px;
+    --space-m: 16px;
+    --space-l: 20px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 40px;
+    --space-4xl: 48px;
+    --space-5xl: 72px;
+    --space-6xl: 96px;
+}
+
+.mt-tabpage-count .mt-tabpage-item {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+}
+/*成员添加*/
+.add-item{
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow:  inset 2px 2px 5px var(--color-black), inset -2px -2px 10px var(--color-white);
+    border-radius: var(--radius-default);
+    text-align: center;
+}
+.add-item .form-title{
+    line-height: 60px;
+    font-size: var(--space-xl);
+    font-weight: bold;
+}
+.add-form{
+    padding-top:var(--space-xl);
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.add-form .fieldname{
+    width: 15%;
+    text-align: right;
+    height:var(--space-4xl);
+}
+.add-form .fieldname>p{
+    display: inline-table;
+    font-weight: bold;
+}
+.add-form .input{
+    width: 35%;
+    text-align: left;
+    height:var(--space-4xl);
+}
+.add-form .input>input{
+    border: 0;
+    outline: 0;
+    padding: var(--space-2xs) var(--space-l) var(--space-2xs) var(--space-l);
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: var(--space-l);
+    border-radius: var(--radius-m);
+    background-color:var(--color-control-bg-default);
+    text-shadow: 1px 1px 0 var(--color-white);
+    box-shadow:  inset 2px 2px 5px var(--color-black), inset -5px -5px 10px var(--color-white);
+    width: 80%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.add-form .input>textarea:focus{
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+.add-form .input>textarea{
+    border: 0;
+    outline: 0;
+    margin: 10px 0;
+    padding: var(--space-2xs) var(--space-l) var(--space-2xs) var(--space-l);
+    -webkit-appearance: none;
+    font-size: var(--space-l);
+    border-radius: var(--radius-m);
+    background-color:var(--color-control-bg-default);
+    text-shadow: 1px 1px 0 var(--color-white);
+    box-shadow:  inset 2px 2px 5px var(--color-black), inset -5px -5px 10px var(--color-white);
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+    height: 200px;
+    placeholder:"不超过50字";
+    resize:none;
+}
+
+.add-form .input>input:focus{
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+
+.add-form .submit{
+    text-align: center;
+    height:var(--space-5xl);
+}
+.add-form .submit-line{
+    text-align: center;
+    height:var(--space-xl);
+}
+.add-form .submit>input{
+    border: 0;
+    outline: 0;
+    width: 200px;
+    height: var(--space-3xl);
+    padding: var(--space-xs) var(--space-l) var(--space-xs) var(--space-l);
+    font-size: var(--space-l);
+    border-radius: var(--radius-h);
+    background-color:var(--color-bg-default);
+    text-shadow: 1px 1px 0 var(--color-white);
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-black);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.add-form .submit>input:hover{
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-black);
+    color: var(--color-typo-link);
+}
+.add-form .submit>input:active{
+    box-shadow: inset 1px 1px 2px var(--color-black), inset -1px -1px 2px var(--color-white);
+    color: var(--color-typo-link);
+}
+
+/*分割线*/
+.line{
+    margin: auto;
+    height:var(--space-xs);
+    width:760px;
+    background-color: var(--color-bg-default);
+    border-radius: var(--radius-h);
+    box-shadow:
+            -1px -1px 4px 0px rgba( var(--color-light), 0.06),
+            -2px -2px 8px 0px rgba( var(--color-light), 0.06),
+            1px 1px 4px 0px rgba( var(--color-shadow), 0.08),
+            2px 2px 8px 0px rgba( var(--color-shadow), 0.08);
+}
