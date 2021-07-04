@@ -43,7 +43,7 @@ public class addInfoServlet extends HttpServlet {
         String PTYPE=req.getParameter("PTYPE");
         String PTERM=req.getParameter("PTERM");
         String POWNER=req.getParameter("POWNER");
-        String PFIRM=req.getParameter("FIRM");
+        String PFIRM=req.getParameter("PFIRM");
         int PYEAR=Integer.parseInt(req.getParameter("PYEAR"));
         int PMONTH=Integer.parseInt(req.getParameter("PMONTH"));
         proRepository.add(PNO,PNAME,PTYPE,PTERM,POWNER,PFIRM,PYEAR,PMONTH);
